@@ -12,7 +12,7 @@ function read(...$filelist) {
     return $list;
 }
 
-$list = read('ks.txt');
+$list = read('https://raw.githubusercontent.com/xiaoboke/xjjsuiji/master/ks.txt');
 $url = $list[array_rand($list)];
 
 header("Location: {$url}");
